@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+	<link rel ="stylesheet" type="text/css" href= "/css/style.css" />
+  </head>
+  <body class="bgimage">
+	<div class = "container">
+		<div class ="top_result">
+			<h1><font color= white size="10"> RESULT </font></h1>
+			<hr align=center size="5" width="800" color=black>
+		</div>
+		<div class = "computer">
+			<h2><b><font color=black> Computer chooses:</font><font color=white>  <%= @computer_throw %></font></b></h2>
+			<img src= "<%= @img_comp  %>">
+		</div>
+		<div class="vs">
+				<p> VS </p>
+				<a href="/" class="tryagain">Try Again</a>
+			</div>
+		<div class = "player">
+			<h2><b><font color=black> You choose:</font><font color=white> <%= @player_throw %></font></b></h2>
+			<img src= "<%= @img_player  %>">
+		</div>
+		<div class="result"
+			<h1> <%= @answer %> </h1>
+		</div>
+	</div>
+  </body>
+</html>
