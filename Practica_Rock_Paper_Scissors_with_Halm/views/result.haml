@@ -1,0 +1,33 @@
+%html
+	%head
+		%title Rock Paper Scissors HAML
+		%link{:rel =>"stylesheet",:type => "text/css",:href => "/css/style.css"}
+	%body{:class =>"bgimage"}
+	.container
+		.span4
+			%h1= $cont_comp 
+		.span4
+			%h2= $cont_player
+		.top_result
+			%h1
+				%font{:color => "white", :size => "10"} RESULTS
+			%hr{:align => "center", :size => "5", :width => "800", :color => "black"}
+			%a{:href => "/reset", :class => "reset"} RESET
+		.computer
+			%h2
+				%b
+					%font{:color => "black"} Computer chooses: 
+					%font{:color => "white"}=  @computer_throw 
+			%img{:src => @img_comp}	
+		.vs
+			%p VS 
+			%a{:href => "/", :class => "tryagain"} Try Again
+		.player
+			%h2
+				%b
+					%font{:color => "black"} You choose: 
+					%font{:color => "white"}= @player_throw 
+			%img{:src => @img_player}
+		
+		.result
+			%p= @answer 

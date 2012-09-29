@@ -1,0 +1,18 @@
+%html
+	%head
+		%title Rock, paper, scissors HAML
+		%link{:rel =>"stylesheet",:type => "text/css",:href => "/css/style.css"}
+	%body{:class =>"bgimage"}
+		.container	
+			.machangos
+			.letras
+			.vs
+				%p VS 
+			.box
+				.centrado
+					%form{:name =>"input",:action =>"/throw",:method =>"POST"}
+						%select{:name =>"op"}
+							%option{:value =>"rock"}Rock
+							%option{:value =>"paper"}Paper
+							%option{:value =>"scissors"}Scissors 
+						%input{:name =>"PLAY", :value => "PLAY", :type =>"submit", :class =>"enviar"}
