@@ -19,6 +19,7 @@
     }
 
     /* Syntax highlighting */
+	/* Formato de Ruby */
 	#content .syntax_ruby .normal {}
     #content .syntax_ruby .comment { color: #CCC; font-style: italic; border: none; margin: none; }
     #content .syntax_ruby .keyword { color: #C60; font-weight: bold; }
@@ -38,6 +39,7 @@
     #content .syntax_ruby .expr { color: #909; }
     #content .syntax_ruby .escape { color: #277; }
 	
+	/* Formato de XML */
 	#content .syntax_xml .normal {}
 	#content .syntax_xml .namespace { color: #B66; font-weight: bold; }
 	#content .syntax_xml .tag { color: #F88; }
@@ -47,6 +49,7 @@
 	#content .syntax_xml .number { color: #F99; }
 	#content .syntax_xml .attribute { color: #BB7; }
 	
+	/* Formato de YAML */
 	#content .syntax_yaml .normal {}
 	#content .syntax_yaml .document { font-weight: bold; color: #07F; }
 	#content .syntax_yaml .type { font-weight: bold; color: #05C; }
