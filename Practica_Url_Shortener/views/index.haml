@@ -1,0 +1,12 @@
+- if @short_url.present? && !@short_url.valid?
+	%div(class="alert alert-error container row span4")
+		%a(class="close" data-dismiss="alert" href="/")
+			x
+		%strong Warning!
+		Invalid URL: #{@short_url.url}
+-elsif @short_url.present? && !@duplicate_custom.nil?
+	%div(class="alert alert-error container row span4")
+		%a(class="close" data-dismiss="alert" href="/")
+			x
+		%strong Duplicate Custom URL
+		,please try another.

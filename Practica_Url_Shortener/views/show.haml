@@ -1,0 +1,20 @@
+%hr
+%h2 List of URL with its Shorter URL.
+%table(class="table table-striped")
+	%tr
+		%td
+			%h3 Original URL
+		%td
+			%h3 Shorter URL
+	-@url_list.each do |element|
+		%tr
+			%td
+				%a(href="#{element[0]}")#{element[0]} 
+			%td
+				-if element[1].custom_url.empty?
+					%a(href="http://#{settings.address}/#{element[1].id}")http://#{settings.address}/#{element[1].id}
+				-else
+					%a(href="http://#{settings.address}/#{element[1].custom_url}")http://#{settings.address}/#{element[1].custom_url}
+					
+			
+				

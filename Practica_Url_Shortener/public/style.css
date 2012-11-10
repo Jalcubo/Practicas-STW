@@ -1,0 +1,33 @@
+  
+body {
+	margin: 0px 0px 0px 0px;
+	
+}
+
+.box{
+	width: 30%;
+	margin-right: auto;
+	background-color: #EBEBEB;
+	margin-top: 100px;
+	margin-left: auto;
+	padding: 20px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	}
+	
+.centrado{
+	text-align: center;
+	}
+
+.shorten{
+	width: 40%;
+	margin-right: auto;
+	background-color:#AAAAA8;
+	margin-top: 40px;
+	margin-left: auto;
+	padding: 20px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	}
+	
+	

@@ -1,0 +1,24 @@
+%html
+	%head
+		%title Short URL
+		%link(rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css")
+		%link(rel="stylesheet" type="text/css" href="style.css")
+	%body
+		%div(class="box")
+			%div(class="centrado")
+				%h1 Practica URL Shortener
+				%hr
+				%a(class="btn btn-small" href="/show")Show URLs
+				%a(class="btn btn-small" href="/searchShorter")Search Shorter URL
+				%a(class="btn btn-small" href="/searchURL")Search URL
+			%div(class="shorten")
+				%form(action="/" method="POST")
+					%label(for="url") URL
+					%input(type="text" name="url" id="url" accesskey="s")
+					%br
+					%label(for="custom") Custom Shortened URL(optional)
+					%input(type="text" name="custom_url" id="custom_url" accesskey="t")
+					%br
+					%input(type="submit" value="Shorten" class="btn btn-primary")
+			%div(class="centrado")
+				=yield

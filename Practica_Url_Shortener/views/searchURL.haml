@@ -1,0 +1,21 @@
+%hr
+%h2  Search of URL
+%form(action="/searchURL" method="POST")
+	%label(for="url")
+	%input(type="text" name="url" id="url" accesskey="s")
+	%input(type="submit" value="Search")
+-if !@result.nil?
+	%p
+		THe Shorter URL of
+		#{params[:url]}
+		is:
+	-if @result.custom_url.empty?
+		%a(href="http://#{settings.address}/#{@result.id}")http://#{settings.address}/#{@result.id}
+	-else
+		%a(href="http://#{settings.address}/#{@result.id}")http://#{settings.address}/#{@result.custom_url}
+-elsif params[:url]
+	%div(class="alert container row span4")
+		%a(class="close" data-dismiss="alert" href="/searchURL")
+			x
+		%p It couldn't find the shorter url in the Database.
+	
