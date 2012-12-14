@@ -1,0 +1,64 @@
+
+body {
+	margin: 0px 0px 0px 0px;
+	
+}
+
+.padre {
+  position: absolute;
+ width: 100%;
+ height: 100%;
+}
+
+.hijo {
+ position: absolute; /* podría ser relative */
+ width: 25%;
+ height: 10%;
+ left: 50%;
+ top: 50%;
+}
+.background_base{
+	background-image:url("/img/fondo_base.jpg");
+}
+.background_interfaz{
+	background-image:url("/img/fondo_interfaz.jpg");
+}
+
+.container{
+	width: 250px;
+	height: 80px;
+	margin-top: -40px;
+	padding-top: 13px;
+	margin-left: -125px;
+	background: #000000;
+	text-align: center;	
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	background-color:rgba(255,255,255,0.7);
+}
+
+.texto{
+	font-size: 20px;
+	font-family: Arial;
+	color:05406D
+}
+.form{
+	padding-top: 20px;
+}
+
+.users{
+	text-align: center;
+	font-family: Arial;
+	color:FFFFFF;
+}
+.chat{
+	padding-top: 20px;
+	padding-left: 20px;
+	color:FFFFFF;
+}
+
+
+
+
+
+	

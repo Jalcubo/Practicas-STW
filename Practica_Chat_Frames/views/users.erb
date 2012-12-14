@@ -1,0 +1,12 @@
+<body class="background_interfaz">
+<script type=text/javascript>
+	setTimeout("document.location=document.location", 5000);
+</script>
+
+	<div class="users">
+	<p><b> Users: </b></p>
+		<% $usr_list.each do |element| %>
+			<p><%= element %></p>
+		<% end %>
+	</div>
+</body>
